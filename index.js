@@ -3,8 +3,8 @@
 
 const currentbalance = document.getElementById('current_balance').innerText;
 const currentBalance = parseFloat(currentbalance);
+
 function donation(donated_amount){
-    
     total_balance = currentBalance - donated_amount
     return total_balance
 }
