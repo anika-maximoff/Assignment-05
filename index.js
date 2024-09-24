@@ -7,7 +7,7 @@ function closeModal() {
 }
 
 function blogpage(){
-    window.location = "/blog.html";
+    window.location = "blog.html";
     
 }
 
