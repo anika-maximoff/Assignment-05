@@ -9,19 +9,29 @@
             rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
               }
             }
-          }
-        }
-      </script>
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+        <style>
+            .font-lexend{
+                font-family: "Lexend", sans-serif;
+                font-optical-sizing: auto;
+            }
+        </style>
 
     </head>
-    <body>
+    <body class="font-lexend">
         <header id="header" class="sticky top-0 z-50">
         
             <!-- Nav Ber Section -->
@@ -47,9 +57,9 @@
 
             <!-- Banner section  -->
             <div id="" class="flex items-center justify-center py-3 lg:py-5 gap-5 ">
-                <div><button id="donation_btn" 
+                <div><button id="donation_btn" onclick="buttonColor('donation')"
                         class="btn bg-[#B4F461] px-10 font-bold hover:bg-[#D0FF93]">Donation</button></div>
-                <div><button id="history_btn" 
+                <div><button id="history_btn" onclick="buttonColor('history')"
                         class="btn  px-10 font-bold border-1 border-gray-300 text-gray-500">History</button></div>
             </div>
         </header>

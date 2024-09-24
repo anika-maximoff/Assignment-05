@@ -1,7 +1,7 @@
 
 
 
-
+//common functions 
 function closeModal() {
     document.getElementById("success-modal").classList.add("hidden");
 }
@@ -44,16 +44,30 @@ document.getElementById('donation_btn').addEventListener('click',function(event)
     
 })
 
-//blog button
-// document.getElementById('blog_btn').addEventListener('click',function(event){
-//     event.preventDefault();
-//     const currentbalance = document.getElementById('current_balance').innerText;
-//     const currentBalance = parseFloat(currentbalance);
+//handle button colour
+function buttonColor(selectedButton){
+    const donationButton = document.getElementById('donation_btn');
+    const historyButton = document.getElementById('history_btn');
 
-//     document.getElementById('current_balance_2').innerText= currentBalance
+    if (selectedButton === 'history') {
+        historyButton.classList.add('bg-[#B4F461]','text-black');
+        historyButton.classList.remove('bg-gray-100');
+        donationButton.classList.add('bg-gray-100', 'text-gray-500','border-1','border-gray-300');
+        donationButton.classList.remove('bg-[#B4F461]','text-black');
 
 
-// });
+
+    } else if (selectedButton === 'donation') {
+        donationButton.classList.add('bg-[#B4F461]','text-black');
+        donationButton.classList.remove('bg-gray-100');
+        historyButton.classList.add('bg-gray-100', 'text-gray-500');
+        historyButton.classList.remove('bg-[#B4F461]','text-black');
+    }
+        
+    
+
+}
+
 
 
 //common function for the donation 
@@ -174,38 +188,5 @@ function donationHistory(donatedAmount,criteria) {
 
 
 
-// add the noakhali donation
 
-// document.getElementById('donate_noakhali_btn').addEventListener('click',function(event){
-//     event.preventDefault();
-
-//     const noakhaliamount = document.getElementById('noakhali_amount').innerText;
-//     const noakhaliAmount = parseFloat(noakhaliamount);
-//     const donation_1 = document.getElementById('donation1').value;
-//     const donation_11 = parseFloat(donation_1);
-//     // const currentbalance = document.getElementById('current_balance').innerText;
-//     // const currentBalance = parseFloat(currentbalance);
-//     if(donation_11 >= 0 && donation_11 < currentBalance) {
-//         const noakhali_new_amount = noakhaliAmount + donation_11
-//         console.log(noakhali_new_amount)
-//         document.getElementById('noakhali_amount').innerText = noakhali_new_amount;
-//         new_total_balance = donation(donation_11)
-//         document.getElementById('current_balance').innerText = new_total_balance
-       
-//         document.getElementById("success-modal").classList.remove("hidden");
-
-
-//         donation_1.value = '';    
-
-//     }
-//     else{
-//         alert('failed to donate , please check if the amount is correct or if it exceeds the current balance.')
-//     }
-
-
-// });
-
-//donate money for feni 
-
-// donate money for quota movement
 
