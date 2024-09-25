@@ -161,7 +161,7 @@ function donationHistory(donatedAmount,criteria) {
     if (donatedAmount >= 0){
         newdiv.classList.add('bg-white','p-5','mb-4','rounded-xl','border-2','border-gray-500');
         newdiv.innerHTML = `
-        <p class="">${donatedAmount} Taka is Donated for ${criteria}</p>
+        <p class="font-semibold">${donatedAmount} Taka is Donated for ${criteria}</p>
         <p class="text-gray-500">Date: ${new Date().toString()}</p>
         `;
     donationHistory.appendChild(newdiv);
