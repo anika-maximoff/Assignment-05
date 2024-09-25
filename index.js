@@ -78,7 +78,7 @@ function buttonColor(selectedButton){
 
 function donation(current_balance,donated_amount,donated_balance,criteria){
 
-    if(donated_amount >= 0 && donated_amount < current_balance) {
+    if(donated_amount >= 0 && donated_amount <= current_balance) {
         const new_total_balance = current_balance - donated_amount
         const new_donated_balance = donated_balance + donated_amount
         document.getElementById('current_balance').innerText = new_total_balance
