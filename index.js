@@ -11,6 +11,10 @@ function blogpage(){
     
 }
 
+function Homepage(){
+    window.location = "index.html";
+}
+
 
 window.onscroll = function() {
     const header = document.getElementById('header');
