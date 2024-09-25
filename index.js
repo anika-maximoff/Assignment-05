@@ -82,10 +82,6 @@ function donation(current_balance,donated_amount,donated_balance,criteria){
         const new_total_balance = current_balance - donated_amount
         const new_donated_balance = donated_balance + donated_amount
         document.getElementById('current_balance').innerText = new_total_balance
-        // donated_balance.innerText= new_donated_balance;
-         
-
-               
         document.getElementById("success-modal").classList.remove("hidden");
         
         donationHistory(donated_amount,criteria);
@@ -95,7 +91,6 @@ function donation(current_balance,donated_amount,donated_balance,criteria){
         
     }
     else{
-
         
         alert('failed to donate , please check if the amount is correct or if it exceeds the current balance.')
         return donated_balance;
@@ -174,7 +169,7 @@ function donationHistory(donatedAmount,criteria) {
     }
 }
 
-// work on history button
+
 
 
 

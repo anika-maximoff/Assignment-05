@@ -34,7 +34,7 @@
     <body class="font-lexend">
         <header id="header" class="sticky top-0 z-50">
         
-            <!-- Nav Ber Section -->
+            <!-- Navbar Section -->
             <nav id="" class="bg-[#F9F7F3] ">
                 <div class="flex justify-around pt-5 pb-5">
                     <div><button id="blog_btn" onclick="blogpage()"
@@ -56,7 +56,7 @@
             
 
             <!-- Banner section  -->
-            <div id="" class="flex items-center justify-center py-3 lg:py-5 gap-5 ">
+            <div id="" class="flex items-center justify-center py-3 lg:py-5 lg:gap-5 lg-2">
                 <div><button id="donation_btn" onclick="buttonColor('donation')"
                         class="btn bg-[#B4F461] px-10 font-bold hover:bg-[#D0FF93]">Donation</button></div>
                 <div><button id="history_btn" onclick="buttonColor('history')"
@@ -65,8 +65,8 @@
         </header>
         <!-- donation section -->
         <main>
-            <div id="donation_section" class="px-20">
-                <!-- section for noakhali -->
+            <div id="donation_section" class="px-5 lg:px-20 ">
+                <!-- section for Noakhali -->
                 <div
                     class="grid grid_cols-1 lg:grid-cols-2 mb-5 items-center p-5 gap-5 border-[1px] border-gray-300 rounded-xl">
                     <div class><img class src="assets/noakhali.png" alt></div>
@@ -105,7 +105,7 @@
                             <div id="success-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-20 hidden">
                                 <div class="bg-white px-20 py-10 rounded-lg shadow-lg text-center">
                                     <h2 class="text-2xl font-bold mb-4">Congratulations!</h2>
-                                    <div class=" flex justify-center items-center "><img src="/assets/coin.png" alt=""></div>
+                                    <div class=" flex justify-center items-center "><img src="assets/coin.png" alt=""></div>
                                     <p>You have donated for Humankind</p>
                                     <h4>Successfully</h4>
                                     <button onclick="closeModal()" class="btn px-10 font-bold mt-4">Close Confirmation!</button>
@@ -144,7 +144,7 @@
                             <div id="success-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-20 hidden">
                                 <div class="bg-white px-20 py-10 rounded-lg shadow-lg text-center">
                                     <h2 class="text-2xl font-bold mb-4">Congratulations!</h2>
-                                    <div class=" flex justify-center items-center "><img src="/assets/coin.png" alt=""></div>
+                                    <div class=" flex justify-center items-center "><img src="assets/coin.png" alt=""></div>
                                     <p>You have donated for Humankind</p>
                                     <h4>Successfully</h4>
                                     <button onclick="closeModal()" class="btn px-10 font-bold mt-4">Close Confirmation!</button>
@@ -182,7 +182,7 @@
                             <div id="success-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-20 hidden">
                                 <div class="bg-white px-20 py-10 rounded-lg shadow-lg text-center">
                                     <h2 class="text-2xl font-bold mb-4">Congratulations!</h2>
-                                    <div class=" flex justify-center items-center "><img src="/assets/coin.png" alt=""></div>
+                                    <div class=" flex justify-center items-center "><img src="assets/coin.png" alt=""></div>
                                     <p>You have donated for Humankind</p>
                                     <h4>Successfully</h4>
                                     <button onclick="closeModal()" class="btn px-10 font-bold mt-4">Close Confirmation!</button>
@@ -198,8 +198,9 @@
             <!-- donation history part -->
 
             <div id="donation_history" class="text-center rounded-lg p-4 hidden">
-                <h4 class="text-lg font-bold mb-2">History</h4>
-                <p>time</p>
+                <h4 class="text-lg font-bold mb-2"> Donation History</h4>
+                <p>Heres All the Donation that you have made</p>
+                <br>
             </div>
 
 
@@ -221,7 +222,7 @@
         </div> -->
         </main>
         <footer>
-            <div class="bg-[#F9F7F3] p-10"></div>
+            <div class="bg-[#F9F7F3] p-10 mt-5"></div>
         </footer>
         <script src="index.js"></script>
     </body>
